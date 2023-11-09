@@ -28,6 +28,8 @@
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--font-color);
 }
 
 .cart-icon {
@@ -41,9 +43,3 @@
 
 }
 
-.greeting {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    margin-top: 3%;
-}
