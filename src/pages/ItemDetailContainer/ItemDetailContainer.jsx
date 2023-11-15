@@ -3,24 +3,29 @@ import { useParams } from "react-router-dom";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
-  const [product, setProduct] = useState({})
+  const [itemSelected, setItemSelected] = useState(null);
   const {id} = useParams();
-  const fetchProducts = () => {
+
+  const fetchProduct = () => {
     fetch(`https://fakestoreapi.com/products/${id}`)
     .then(res=>res.json())
-    .then(json=>setProduct(json))
+    .then(json=>setItemSelected(json))
     .catch((error) => console.log(error))
   }
 
   useEffect(() => {
-    fetchProducts();
+    fetchProduct();
   },[]);
 
   return (
-    <div className="item-detail-container">
-      <ItemDetail itemSelected={product}/>
+    <div>
+      {id && (
+                <div className="item-detail-container">
+                <ItemDetail itemSelected={itemSelected} />
+            </div>
+            )};
     </div>
-  )
-}
+  );
+};
 
 export default ItemDetailContainer;

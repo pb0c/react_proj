@@ -16,7 +16,7 @@ const Navbar = () => {
       <div>
         <ul className='list-container'>
           <li><Link to={'/category/electronics'} className='item-button'>Electrónicos</Link></li>
-          <li><Link to={'/category/jewerely'} className='item-button'>Joyería</Link></li>
+          <li><Link to={'/category/jewelery'} className='item-button'>Joyería</Link></li>
           <li><Link to={'/category/women\'s-clothing'} className='item-button'>Ropa de mujer</Link></li>
           <li><Link to={'/category/men\'s-clothing'} className='item-button'>Ropa de hombre</Link></li>
         </ul>
