@@ -1,6 +1,6 @@
 import './styles.css';
 
-export const Item = ({title, description, price, image}) => {
+const Item = ({title, description, price, image}) => {
   return (
     <div className='card-container'>
         <h6 className="card-title">{title}</h6>
@@ -12,3 +12,6 @@ export const Item = ({title, description, price, image}) => {
     </div>
   )
 }
+
+
+export default Item;

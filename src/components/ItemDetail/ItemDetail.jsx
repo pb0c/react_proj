@@ -1,7 +1,8 @@
 import './styles.css'
-import '../../components/Item/Item'
+import Item from '../Item/Item'
 
 const ItemDetail = ({itemSelected}) => {
+  
   return (
     <div>
       <h6 className="card-tittle">{itemSelected?.title}</h6>
@@ -11,7 +12,8 @@ const ItemDetail = ({itemSelected}) => {
       </div>
       <p>${itemSelected?.price}</p>
     </div>
-  )
+  );
+
 };
 
 export default ItemDetail;

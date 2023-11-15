@@ -3,8 +3,8 @@ import '../../components/ItemCount/ItemCount'
 import '../../components/ItemList/ItemList'
 import '../../components/Item/Item'
 import ItemCount from '../../components/ItemCount/ItemCount';
-import { Item } from '../../components/Item/Item';
-import { ItemList } from '../../components/ItemList/ItemList';
+import Item from '../../components/Item/Item';
+import ItemList from '../../components/ItemList/ItemList';
 import { useState, useEffect } from 'react';
 
 const ItemListContainer = ( {} ) => {
@@ -25,7 +25,7 @@ const ItemListContainer = ( {} ) => {
       <h1>List container</h1>
       <Item/>
       <ItemCount/>
-      <ItemList productList={productList}/>
+      <ItemList/>
     </div>
     )
 };
