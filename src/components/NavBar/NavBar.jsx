@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './styles.css'
 import CartWidget from '../CartWidget/CartWidget'
 
@@ -8,17 +8,17 @@ const Navbar = () => {
   return (
     <div className='navbar-container'>
       <div>
-        <Link to="/"><img src={'./logo.png'} alt="logo" width='100px'/></Link>
+        <NavLink to="/"><img src={'./logo.png'} alt="logo" width='100px'/></NavLink>
       </div>
       <div>
       <h1>Tienda Rosita</h1>
       </div>
       <div>
         <ul className='list-container'>
-          <li><Link to={'/category/electronics'} className='item-button'>Electrónicos</Link></li>
-          <li><Link to={'/category/jewelery'} className='item-button'>Joyería</Link></li>
-          <li><Link to={'/category/women\'s-clothing'} className='item-button'>Ropa de mujer</Link></li>
-          <li><Link to={'/category/men\'s-clothing'} className='item-button'>Ropa de hombre</Link></li>
+          <li><NavLink to={'/category/electronics'} activeClassname="active" className='item-button'>Electrónicos</NavLink></li>
+          <li><NavLink to={'/category/jewelery'} activeClassname="active" className='item-button'>Joyería</NavLink></li>
+          <li><NavLink to={'/category/women\'s-clothing'} activeClassname="active" className='item-button'>Ropa de mujer</NavLink></li>
+          <li><NavLink to={'/category/men\'s-clothing'} activeClassname="active" className='item-button'>Ropa de hombre</NavLink></li>
         </ul>
         
       </div>

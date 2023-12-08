@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import './styles.css'
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {

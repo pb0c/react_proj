@@ -32,6 +32,10 @@
     color: var(--font-color);
 }
 
+.active {
+     color: #f1bddd;
+}
+
 .cart-icon {
     display: flex;
     flex-direction: row;

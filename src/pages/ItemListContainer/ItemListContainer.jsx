@@ -22,9 +22,9 @@ const ItemListContainer = ( {} ) => {
 
   return (
     <div>
-      <h1>List container</h1>
-      <Item/>
-      <ItemCount/>
+      <h1>Bienvenido</h1>
+      {/* <Item/>
+      <ItemCount/> */}
       <ItemList/>
     </div>
     )

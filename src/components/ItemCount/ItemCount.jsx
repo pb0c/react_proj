@@ -1,9 +1,6 @@
 import '../NavBar/styles.css'
-import { useState } from 'react';
 
-const ItemCount = () => {
-  const [count, setCount] = useState(0);
-  const stock = 10;
+const ItemCount = ({ stock, setCount, count }) => {
 
   const onAdd = () => {
     if (count === stock) return;
@@ -19,7 +16,7 @@ const ItemCount = () => {
     <div>
       <button onClick={onSubtract}>-</button>
       <span>{count}</span>
-      <button onClick={onAdd}>+</button>
+      {count === stock ? null : <button onClick={onAdd}>+</button>}
     </div>
   )
 };
